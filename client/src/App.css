@@ -1,0 +1,178 @@
+
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+
+.navbar{
+  width: 2050px;
+  height:20px;
+}
+.home-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column; /* Adjust to stack content vertically */
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(145, 138, 130); /* White background */
+}
+
+.content {
+  max-width: 600px; /* Limit content width */
+  padding: 40px; /* Add padding for spacing */
+  background-color: #f9f5f1; /* Beige background */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+}
+
+h1 {
+  font-size: 6rem;
+  color: #333; /* Darker text color */
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 1.5rem;
+  color: #190909; /* Slightly darker text color */
+  margin-bottom: 40px;
+}
+
+button {
+  background-color:rgb(252, 249, 246);
+  
+  color: #110e0e;
+  font-weight: bolder;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-size: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #000000;
+  color: whitesmoke;
+}
+
+.navimage {
+  background-image: url("assets/home.png");
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+/* App.css or separate CSS file for NewPage */
+
+.new-page {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: black; /* Change text color to black */
+  z-index: 2;
+}
+
+.overlay h2 {
+  font-size: 64px; /* Adjust font size as needed */
+  font-family: 'Arial', sans-serif; /* Change font style */
+  margin-bottom: 40px;
+}
+
+.overlay p {
+  font-size: 45px; /* Adjust font size as needed */
+  font-family: 'Arial', sans-serif; /* Change font style */
+  margin-bottom: 20px;
+}
+
+.redirect-button {
+  background-color: rgb(179, 132, 132);
+  color: white;
+  font-weight: bold;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.redirect-button:hover {
+  background-color: #0056b3;
+}
+
+.background-image {
+  width: 100%;
+  height: 1200px;
+  display: block;
+
+}
+.content {
+  max-width: 1200px; /* Set maximum width for content */
+  margin: 0 auto; /* Center content horizontally */
+  padding: 2px; /* Add padding for spacing */
+}
+
+.about-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Two columns in the grid */
+  gap: 20px; /* Add gap between grid items */
+}
+
+.about-image img {
+  max-width: 100%; /* Ensure image doesn't exceed its container */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-text h1 {
+  font-size: 2.5rem;
+}
+
+.about-text p {
+  font-size: 1.5rem;
+}
